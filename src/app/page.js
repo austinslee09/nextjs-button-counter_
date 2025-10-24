@@ -1,6 +1,6 @@
 import  Counter  from "./counter"
 
-export default function home (){
+export default function Home (){
   return(
     <main>
       <center> Counter Section
