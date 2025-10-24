@@ -7,8 +7,9 @@ export default function Counter () {
         <div>
             <p>Current Sales Count: {count}</p>
             <button id="add" onClick={() => setCount(count +1)}>Add One</button>
-            
+            <br />
             <button id="subtract" onClick={() => setCount(count -1)}>Subtract One</button>
+            <br />
             <button id="reset" onClick={() => setCount(0)}>Reset</button>
 
         </div>
