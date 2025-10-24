@@ -15,3 +15,4 @@ export default function Counter () {
         </div>
     )
 }
+<input type="number"></input>
