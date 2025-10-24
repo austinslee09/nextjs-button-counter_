@@ -4,7 +4,7 @@ export default function Home (){
   return(
     <main>
       <center> Counter Section
-        <counter />
+        <Counter />
       </center>
     </main>
   )
