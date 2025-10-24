@@ -2,17 +2,24 @@
 import {useState} from 'react';
 export default function Counter () {
     const [count, setCount]= useState(0);
+    const [step, setStep]= useState(1)
+    
 
     return( 
-        <div>
+        <div >
             <p>Current Sales Count: {count}</p>
             <button id="add" onClick={() => setCount(count +1)}>Add One</button>
             <br />
             <button id="subtract" onClick={() => setCount(count -1)}>Subtract One</button>
             <br />
             <button id="reset" onClick={() => setCount(0)}>Reset</button>
+            <br />
+            <input type="number"></input>
+            <br />
+            
 
+            
         </div>
     )
 }
-<input type="number"></input>
+<div aria-live="polite"></div>
