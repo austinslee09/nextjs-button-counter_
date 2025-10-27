@@ -7,7 +7,8 @@ In this project we have made a counter that allows you to add and subtract as we
 How to run locally: 
 1 Download files off github
 2 cd nextjs-button-counter in terminal 
-3 Pull the local host "http://localhost:3000"
+3 npm run dev
+4 Pull the local host "http://localhost:3000"
 
 How to build
 npm run build, npm start
