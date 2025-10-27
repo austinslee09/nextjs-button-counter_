@@ -8,6 +8,7 @@ export default function Home (){
         <Counter />
         <br></br>
         <h2>Custom Counter</h2>
+        <br></br>
         <Counter initialCount={3} initialStep={2} />
       </center>
     </main>

@@ -1,14 +1,14 @@
 'use client';
 import {useState} from 'react';
 export default function Counter ({initialCount = 0, initialStep =1}) {
-    const [count, setCount]= useState(0);
-    const [step, setStep]= useState(1)
+    const [count, setCount]= useState(initialCount);
+    const [step, setStep]= useState(initialStep)
     // name values
     
 
     return( 
         <section>
-        <div aria-live="polite">
+        <div aria-live="polite"class="box" id="box1">
             <p>Current Sales Count: {count}</p>
             <button id="add" onClick={() => setCount(count +1)}>Add One</button>
             <br />
@@ -20,7 +20,7 @@ export default function Counter ({initialCount = 0, initialStep =1}) {
             <br />
             <br />
             </div>
-            <div aria-live="polite">
+            <div aria-live="polite" class="box" id="box2">
             <input id="steps" type="number" value={step} onChange={(e) => setStep(e.target.value)}></input>
             <br />
             <button onClick={() => setCount(count => +count + +step)}>Custom Add</button> 

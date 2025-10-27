@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --color-background: #527c73;
+  --color-background: #575aa8;
   --color-foreground: #2d2121;
   --color-link-hover: #376ec5;
   --shadow-color: rgba(0, 0, 0, 0.15);
@@ -37,4 +37,16 @@ button:hover {
   text-decoration: underline;
   opacity: 0.9;
   box-shadow: 0 6px 15px var(--shadow-color);
+}
+.box{
+width: 250px;
+height: 200px;
+}
+#box1{
+    background-color: #436d55;
+    padding: 1px;
+}
+#box2{
+padding: 2px;
+background-color:grey;
 }
