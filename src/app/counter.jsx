@@ -1,12 +1,12 @@
 'use client';
 import {useState} from 'react';
-export default function Counter () {
+export default function Counter (initialCount = 0, initialStep =1) {
     const [count, setCount]= useState(0);
-    const [step, setStep]= useState(initialStep)
+    const [step, setStep]= useState(1)
     
 
     return( 
-        <div >
+        <div aria-live="polite">
             <p>Current Sales Count: {count}</p>
             <button id="add" onClick={() => setCount(count +1)}>Add One</button>
             <br />
@@ -14,12 +14,16 @@ export default function Counter () {
             <br />
             <button id="reset" onClick={() => setCount(0)}>Reset</button>
             <br />
-            <input type="number"></input>
             <br />
-            
-
-            
+            <br />
+            <input id="steps" type="number" value={step} onChange={(e) => setStep(e.target.value)}></input>
+            <br />
+            <button onClick={() => setCount(count => +count + +step)}>Custom Add</button> 
+            <br />
+            <button onClick={() => setCount(count => count - step)} disabled={count-step < 0}>Custom Subtract</button>
+            <br />
+            <button> <a href="https://www.youtube.com/watch?v=u8ccGjar4Es">Menu</a>How to Count</button>
         </div>
     )
 }
-<div aria-live="polite"></div>
+
