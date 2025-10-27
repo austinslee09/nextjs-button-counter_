@@ -22,7 +22,8 @@ export default function Counter (initialCount = 0, initialStep =1) {
             <br />
             <button onClick={() => setCount(count => count - step)} disabled={count-step < 0}>Custom Subtract</button>
             <br />
-            <button> <a href="https://www.youtube.com/watch?v=u8ccGjar4Es">Menu</a>How to Count</button>
+            <br />
+            <button><ul> <a href="https://www.youtube.com/watch?v=u8ccGjar4Es"> Learn to count</a> </ul></button>
         </div>
     )
 }
