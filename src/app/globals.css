@@ -58,6 +58,7 @@ button {
   background-color: grey;
 }
 header{
-  background-color: whitesmoke;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background-color: rgb(205, 197, 197);
+  
+  width: 150px;
 }
