@@ -40,7 +40,7 @@ button:hover {
 }
 .box{
 width: 250px;
-height: 200px;
+height: 300px;
 }
 #box1{
     background-color: #436d55;
@@ -48,5 +48,16 @@ height: 200px;
 }
 #box2{
 padding: 2px;
-background-color:grey;
+background-color:rgb(85, 85, 116);
+}
+button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: grey;
+}
+header{
+  background-color: whitesmoke;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }

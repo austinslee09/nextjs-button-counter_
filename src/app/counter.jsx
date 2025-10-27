@@ -8,6 +8,7 @@ export default function Counter ({initialCount = 0, initialStep =1}) {
 
     return( 
         <section>
+            <header> <h1>Counter Project</h1></header>
         <div aria-live="polite"class="box" id="box1">
             <p>Current Sales Count: {count}</p>
             <button id="add" onClick={() => setCount(count +1)}>Add One</button>
